@@ -1,0 +1,65 @@
+.cabeca{
+  position: center;
+}
+
+body{
+  padding: 0;
+  margin: 0;
+  font-family: "montserrat",sans-serif;
+  background: #f1f1f1;
+}
+
+.tarefa-list{
+  width: 400px;
+  padding: 40px;
+  background: url(bg.png) no-repeat;
+  background-size: cover;
+}
+
+
+.tarefa input:checked ~ .text{
+  text-decoration: line-through;
+  color: #e74c3c;
+}
+
+.tarefa-list h2{
+  color: #fff;
+  text-transform: uppercase;
+}
+.tarefa{
+  display: flex;
+  padding: 10px 0;
+  align-items: center;
+  cursor: pointer;
+}
+
+.tarefa input{
+  position: absolute;
+  visibility: hidden;
+}
+
+
+
+.tarefa i{
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+  text-align: center;
+  line-height: 48px;
+  font-size: 20px;
+  margin-right: 14px;
+  color: transparent;
+}
+
+.text{
+  font-size: 18px;
+  color: #fff;
+}
+
+.tarefa input:checked ~ i{
+  color: #e74c3c;
+}
+
+
